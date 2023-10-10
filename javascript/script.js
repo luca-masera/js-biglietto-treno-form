@@ -35,7 +35,8 @@ button.addEventListener('click', function() {
     }
     
     let costoBiglietto = document.getElementById ('prezzo');
-    costoBiglietto.value = '€ '+biglietto.toFixed(2)
+    costoBiglietto.value = '€ '+biglietto.toFixed(2);
+
 });
 
 
