@@ -23,19 +23,19 @@ button.addEventListener('click', function() {
         window.location.reload()
         console.log(km, eta);
     }
+    if(eta < 18){
+        biglietto = biglietto - (biglietto * 20/100)
+        console.log(biglietto)
+    }
+    else if(eta > 65){
+        biglietto = biglietto - (biglietto * 40/100)
+        console.log(biglietto)
+    }
+    
+let costoBiglietto = document.getElementById ('prezzo');
+costoBiglietto.innerHTML = biglietto.toFixed(2)
 });
 
 
 
-if(eta < 18){
-    biglietto = biglietto - (biglietto * 20/100)
-    console.log(biglietto)
-}
-else if(eta > 65){
-    biglietto = biglietto - (biglietto * 40/100)
-    console.log(biglietto)
-}
 
-
-let costoBiglietto = document.getElementById ('prezzo');
-costoBiglietto.innerHTML = biglietto.toFixed(2)
