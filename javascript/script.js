@@ -3,10 +3,10 @@
 
 const euroAlKm = 0.21;
 
-let costoBase = euroAlKm * 100;
+const costoBase = euroAlKm * 100;
 console.log(costoBase);
 
-let biglietto = euroAlKm * km; 
+
 
 
 const button = document.querySelector('.btn-primary');
@@ -16,6 +16,8 @@ button.addEventListener('click', function() {
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
     console.log(km, eta)
+
+    let biglietto = euroAlKm * km; 
 
     if(isNaN(km) || isNaN(eta)){
         console.log("not a number");
@@ -32,8 +34,8 @@ button.addEventListener('click', function() {
         console.log(biglietto)
     }
     
-let costoBiglietto = document.getElementById ('prezzo');
-costoBiglietto.innerHTML = biglietto.toFixed(2)
+    let costoBiglietto = document.getElementById ('prezzo');
+    costoBiglietto.value = '€ '+biglietto.toFixed(2)
 });
 
 
