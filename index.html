@@ -12,20 +12,28 @@
 </head>
 
 <body>
-    <div class="container border vh-100">
-        <div class="form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="km" placeholder="">
-            <label for="km">Quanti chilometri vuoi percorrere?</label>
+    <div class="container bg-body-tertiary border vh-100">
+        <div class="bg-info mt-5 rounded">
+            <h1 class="d-flex justify-content-center ">Calcola il prezzo del tuo prossimo viaggio</h1>
+            <div class="form-floating mb-3 mt-4 col-md-4 ms-5 ">
+                <input type="text" class="form-control" id="km" placeholder="">
+                <label for="km">Quanti chilometri vuoi percorrere?</label>
+            </div>
+            <div class="form-floating col-md-6 ms-5">
+                <input type="text" class="form-control" id="eta" placeholder="">
+                <label for="eta">Quanti anni hai?</label>
+            </div>
+            <div class="form-floating mb-3 mt-3 col-md-8 ms-5">
+                <input type="text" class="form-control" id="prezzo" placeholder="">
+                <label for="">Prezzo</label>
+            </div>
+            <button type="button" class="btn btn-primary mt-3 ms-5 mb-4">Calcola</button>
+            <ul>
+                <li>ATTENZIONE:</li>
+                <li> Se hai meno di 18 avrai diritto a uno sconto del 20%;</li>
+                <li> Se hai più di 65 anni avrai diritto a uno sconto del 40%.</li>
+            </ul>
         </div>
-        <div class="form-floating">
-            <input type="text" class="form-control" id="eta" placeholder="">
-            <label for="eta">Quanti anni hai?</label>
-        </div>
-        <div class="form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="prezzo" placeholder="">
-            <label for="">Prezzo</label>
-        </div>
-        <button type="button" class="btn btn-primary mt-3">Calcola</button>
     </div>
 
     <script src="javascript/script.js"></script>
