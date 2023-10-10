@@ -3,7 +3,7 @@ Titolo esercizio:
 
 
 Consegna esercizio:
-Scrivere un programma che chieda all’utente:
+<!--Scrivere un programma che chieda all’utente:
 - Il numero di chilometri da percorrere
 - Età del passeggero
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
