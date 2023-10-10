@@ -6,6 +6,8 @@ const euroAlKm = 0.21;
 let costoBase = euroAlKm * 100;
 console.log(costoBase);
 
+let biglietto = euroAlKm * km; 
+
 
 const button = document.querySelector('.btn-primary');
 
@@ -24,9 +26,16 @@ button.addEventListener('click', function() {
 });
 
 
-let biglietto = euroAlKm * km; 
+
+if(eta < 18){
+    biglietto = biglietto - (biglietto * 20/100)
+    console.log(biglietto)
+}
+else if(eta > 65){
+    biglietto = biglietto - (biglietto * 40/100)
+    console.log(biglietto)
+}
 
 
-
-
-
+let costoBiglietto = document.getElementById ('prezzo');
+costoBiglietto.innerHTML = biglietto.toFixed(2)
