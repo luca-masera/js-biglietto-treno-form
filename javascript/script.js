@@ -13,8 +13,11 @@ const button = document.querySelector('.btn-primary');
 
 
 button.addEventListener('click', function() {
+    let nomeCognome = document.getElementById('nome-cognome').value;
+    console.log(nomeCognome)
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
+
     console.log(km, eta)
 
     let biglietto = euroAlKm * km; 
@@ -40,8 +43,9 @@ button.addEventListener('click', function() {
     let costoBigliettoSotto = document.querySelector ('div.biglietto');
     costoBigliettoSotto.append('€ '+biglietto.toFixed(2));
 
+    let nomeUno = document.querySelector ('div.nome');
+    nomeUno.append (nomeCognome);
+
 });
-
-
 
 
